@@ -1,19 +1,23 @@
 package lesson_1
 
-fun main(){
-
+fun main() {
+    // Изменено форматирование кода, добавлен вывод на печать
     // Переменная года полета Юрия Гагарина
-    val  year : String = "1961"
+    val year: String = "1961"
     // Переменная час взлета
-    var  hour = 9
+    var hour = 9
     // Переменная минута взлета
-    var  minute = 7
+    var minute = 7
+
+    println("Год полета $year")
+    println("Час взлета $hour")
+    println("Минута взлета $minute")
 
     // меняем значения переменных
     hour = 10
     minute = 55
 
     // Вывод на печать
-    println("Время посадки $hour:$minute")
+    print("Время посадки $hour:$minute")
 
 }
