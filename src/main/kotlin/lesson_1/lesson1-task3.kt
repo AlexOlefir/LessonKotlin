@@ -5,9 +5,9 @@ fun main() {
     // Переменная года полета Юрия Гагарина
     val year: String = "1961"
     // Переменная час взлета
-    var hour:String = "09"
+    var hour: String = "09"
     // Переменная минута взлета
-    var minute:String = "07"
+    var minute: String = "07"
 
     println("Год полета $year")
     println("Час взлета $hour")
