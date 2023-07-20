@@ -8,8 +8,15 @@ fun main() {
     val travelTimeMinute = travelTime % 60 // Время в пути минут
     var arrivalHour = departureHour + travelTimeHour // Время прибытия час
     var arrivalMinute = departureMinute + travelTimeMinute //Время прибытия минута
-    if (arrivalMinute >= 60) {
-        arrivalHour += 1; arrivalMinute -= 60
+
+    while (arrivalMinute >= 60) {
+        arrivalHour++
+        arrivalMinute -= 60
     }
+    while (arrivalMinute >= 120) {
+        arrivalHour+2
+        arrivalMinute -= 120
+    }
+    println("$travelTimeMinute")
     println(String.format("Время прибытия поезда: %02d:%02d", arrivalHour, arrivalMinute))
 }
