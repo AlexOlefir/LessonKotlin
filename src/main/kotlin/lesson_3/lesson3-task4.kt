@@ -8,7 +8,6 @@ fun main() {
     var motionNumber = 1 //Номер хода
     var motion: String
     motion = cells + numberCells + cellsEdit + numberCellsEdit + motionNumber
-
     println(motion)
 
     cells = "D"
