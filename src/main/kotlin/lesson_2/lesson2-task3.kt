@@ -13,10 +13,7 @@ fun main() {
         arrivalHour++
         arrivalMinute -= 60
     }
-    while (arrivalMinute >= 120) {
-        arrivalHour+2
-        arrivalMinute -= 120
-    }
+
     println("$travelTimeMinute")
     println(String.format("Время прибытия поезда: %02d:%02d", arrivalHour, arrivalMinute))
 }
